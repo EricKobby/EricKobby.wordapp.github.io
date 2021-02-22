@@ -1,8 +1,8 @@
-import { useEffect } from 'react';
-import './App.css';
-import { Question } from './components/Question';
-import { useAction } from './context/hooks';
-import { WordActionCreatorType } from './types';
+import { useEffect } from 'react'
+import './App.css'
+import QuestionsBoard from './components/QuestionsBoard'
+import { useAction } from './context/hooks-hocs'
+import { WordActionCreatorType } from './types'
 
 const App = () => {
   
@@ -12,9 +12,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <Question />
+      <QuestionsBoard />
     </div>
   );
 }
 
-export default App;
+export default App

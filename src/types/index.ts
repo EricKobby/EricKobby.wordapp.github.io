@@ -14,5 +14,8 @@ export interface ReducerAction{
 
 export enum WordActionCreatorType{
     GetQuestions = "getQuestions",
-    SubmitAnswer =  "submitAnswer"
+    SubmitAnswer =  "submitAnswer",
+    GetNextQuestion = "getNextQuestion"
 }
+
+export type WithContextProp =  Partial<InitialState>

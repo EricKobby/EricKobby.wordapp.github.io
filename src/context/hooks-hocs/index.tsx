@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import  { useContext } from 'react'
 import { DataContext } from '..'
 import { WordActionCreatorType } from '../../types';
 
@@ -10,3 +10,5 @@ export function useAction(action: WordActionCreatorType) {
 
     return actions[action];
 }
+
+export const withDataContext = (WrappedComponent: any) => () => <WrappedComponent {...useContext(DataContext)}/>

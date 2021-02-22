@@ -1,14 +1,14 @@
 import React from 'react'
+import { Answer } from './Answer'
 
-interface Props {
-    
+interface Prop {
+    answers: Array<string>
 }
 
-const Answers = (props: Props) => {
+const Answers: React.FC<Prop> = ({ answers }) => {
+
     return (
-        <div>
-            
-        </div>
+        <ul className="list-group mb-3">{answers.map((answer, i) => <Answer answer={answer} key={i} />)}</ul>
     )
 }
 
