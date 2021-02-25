@@ -13,7 +13,8 @@ export function questionsReducer(state: InitialState, action: ReducerAction): In
         case GET_NEXT_QUESTION:
             return {
                 ...state,
-                current: state.questions[action.payload]
+                current: state.questions[action.payload],
+                currentIndex: action.payload
             }
         default:
             return state;

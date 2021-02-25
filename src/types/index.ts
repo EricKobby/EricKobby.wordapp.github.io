@@ -4,6 +4,7 @@ export interface InitialState{
     current: any;
     score: 0;
     actions: any;
+    currentIndex: number;
 }
 
 export interface ReducerAction{

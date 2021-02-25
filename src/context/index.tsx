@@ -8,7 +8,8 @@ export const initialState: InitialState = {
     questions: Array<any>(),
     current: null,
     score: 0,
-    actions: null
+    actions: null,
+    currentIndex: 0
 };
 
 export const DataContext = createContext(initialState);
